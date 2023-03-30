@@ -1,0 +1,153 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway',sans-serif;
+}
+body{
+    background-color: #d9d9d9;
+}
+.main .center{
+    background-image: url(../images/bg.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+.menu{
+    display: flex;
+    background-color:white;
+    border-radius:0 0 20px 20px;
+    padding: 20px;
+    width: 100%;
+}
+.menu a{
+    text-decoration: none;
+    transition-duration: 350ms;
+    color: rgb(0, 0, 0);
+}
+.menu a:hover{
+    cursor: pointer;
+    border-bottom: 2px solid #FF6666;
+}
+.mokup{
+    color:white;
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+    font-size: 20px;
+    margin-top: 50px;
+}
+.mokup img{
+    margin-top: -120px;
+    width: 100%;
+}
+.btns a{
+    font-size: 20px;
+    margin-left: 50px;
+}
+.sub-sel {
+    margin-top: -100px;
+    display: flex;
+    width: 60%;
+    text-align: center;
+    list-style: none;
+}
+.sub-sel button{
+    border: 0;
+    background: 0;
+    transition-duration: 350ms;
+    font-size: 30px;
+}
+.sub-sel button:hover{
+    cursor: pointer;
+    text-shadow: 1px 1px #FF6666;
+    border-bottom: 2px solid #FF6666;
+}
+.cards{
+    padding: 20px;
+    margin-top: 100px;
+    display:flex;
+    text-align: center;
+}
+.card{
+    background-color: white;
+    border-radius: 10px;
+    color:black;
+    padding: 10px;
+    width: calc(90%/3);
+    height: 100px;
+    list-style: none;
+    transition-duration: 350ms;
+}
+.card li{
+    margin: 20px;
+    font-weight: normal;
+    text-align: left;
+    margin-left: 20px;
+}
+.card:hover{
+    border-bottom: 4px solid #FF6666;
+    font-size: 20px;
+    height: 100%;
+}
+.card:hover img{
+    width: 40px;
+}
+
+.card:not(:hover) h1{
+    font-size: 70px;
+}
+.card:not(:hover) li{
+    font-size: 0;
+}
+.card:not(:hover) img{
+    width: 0;
+}
+
+@media screen and (min-width: 1400px) {
+    .main .center{
+        height: 1600px;
+    }
+    .main .mokup img{
+        margin-top: -120px;
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .main .center{
+        height: 1600px;
+    }
+    .main .mokup img{
+        margin-top: -50px;
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .main .center{
+        height: 1100px;
+    }
+    .main .mokup img{
+        margin-top: -50px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .main .center{
+        height: 900px;
+    }
+    .main .mokup {
+        font-size: 15px;
+    }
+    .main .mokup img{
+        margin-top: -30px;
+    }
+}
+@media screen and (max-width: 300px) {
+    .main .center{
+        height: 1000px;
+    }
+    .main .mokup img{
+        margin-top: -20px;
+    }
+}
